@@ -17,7 +17,7 @@ export const openWhitelistTx = async (
     contractName: CONTRACT_NAME,
     functionName,
     functionArgs: [standardPrincipalCV(principal)],
-    userSession,
+    userSession: userSession as any,
     network: getNetwork(),
     onFinish: data => onFinish?.(data.txId),
   });

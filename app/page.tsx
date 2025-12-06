@@ -34,8 +34,7 @@ const HomePage = () => {
 
   const handleConnect = () => {
     showConnect({
-      userSession,
-      network: getNetwork(),
+      userSession: userSession as any,
       appDetails: {
         name: 'Stacks Whitelist Dapp',
         icon: '',
@@ -44,7 +43,7 @@ const HomePage = () => {
         setConnectedAddress(getUserAddress());
         setBanner('Wallet connected');
       },
-    });
+    } as any);
   };
 
   const handleDisconnect = () => {

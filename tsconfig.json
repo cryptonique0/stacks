@@ -13,12 +13,12 @@
     "esModuleInterop": true,
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "baseUrl": ".",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
     "allowImportingTsExtensions": true,
+    "ignoreDeprecations": "6.0",
     "paths": {
       "@/*": [
         "./*"
