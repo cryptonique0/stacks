@@ -222,7 +222,7 @@ const HomePage = () => {
         <div>
           <p className="text-xs uppercase tracking-[0.2em] text-cyan-200/70">Read-only API</p>
           <p className="font-semibold text-slate-100">GET /api/whitelist/status?address=...</p>
-          <p>Returns JSON {{ whitelisted, contract, network }}</p>
+          <p>Returns JSON: {`{ whitelisted, contract, network }`}</p>
         </div>
       </section>
     </div>
